@@ -1,5 +1,5 @@
 {
-  "name": "module-generator",
+  "name": "import-generator",
   "version": "0.1.0",
   "description": "module schema conversion to import statements",
   "main": "index.js",

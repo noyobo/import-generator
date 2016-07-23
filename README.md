@@ -1,13 +1,13 @@
-### module-generator [![npm](http://img.shields.io/npm/v/module-generator.svg)](https://npmjs.org/package/module-generator) [![npm](http://img.shields.io/npm/dm/module-generator.svg)](https://npmjs.org/package/module-generator)
+### import-generator [![npm](http://img.shields.io/npm/v/import-generator.svg)](https://npmjs.org/package/import-generator) [![npm](http://img.shields.io/npm/dm/import-generator.svg)](https://npmjs.org/package/import-generator)
 
-> module schema conversion to import statements
+> Module schema conversion to import statements
 
-`npm install module-generator`
+`npm install import-generator`
 
 ### Usage
 
 ```js
-var generator = require('module-generator');
+var generator = require('import-generator');
 
 // input
 var importSchema = {
