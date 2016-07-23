@@ -7,6 +7,14 @@
     "build": "babel --presets es2015 ./index.es6.js -o index.js",
     "test": "babel-node --presets es2015 test/generate.test.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noyobo/import-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/noyobo/import-generator/issues"
+  },
+  "homepage": "https://github.com/noyobo/import-generator",
   "keywords": [
     "module",
     "detective"
