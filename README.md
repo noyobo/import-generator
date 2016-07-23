@@ -12,12 +12,13 @@ var generator = require('import-generator');
 // input
 var importSchema = {
   "name": "@ali/ice",
+  "default": "ICE",
   "members": [{
     "name": "Accordion",
     "alias": "Accordion"
   }, {
     "name": "Button",
-    "alias": "Button"
+    "alias": "Btn"
   }, {
     "name": "Form",
     "alias": "Form"
@@ -27,7 +28,7 @@ var importSchema = {
 generator(importSchema)
 
 // output:
-import { Accordion, Button, Form } from "@ali/ice";
+import ICE, { Accordion, Button as Btn, Form } from "@ali/ice";
 ```
 
 ### Related

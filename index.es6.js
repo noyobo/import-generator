@@ -3,6 +3,21 @@ import * as t from 'babel-types';
 
 module.exports = function generateImportAst(dec) {
   const importSpecifierQueue = [];
+  if (dec.default) {
+    importSpecifierQueue.push(
+      t.importDefaultSpecifier(
+        t.Identifier(dec.default)
+      )
+    )
+  }
+
+  if (dec.star && dec.alias) {
+    importSpecifierQueue.push(
+      t.ImportNamespaceSpecifier(
+        t.Identifier(dec.alias)
+      )
+    )
+  }
 
   if (dec.members && dec.members.length > 0) {
     dec.members.forEach((member) => {
@@ -14,20 +29,7 @@ module.exports = function generateImportAst(dec) {
       )
     })
   }
-  if (dec.default) {
-    importSpecifierQueue.push(
-      t.importDefaultSpecifier(
-        t.Identifier(dec.default)
-      )
-    )
-  }
-  if (dec.star) {
-    importSpecifierQueue.push(
-      t.ImportNamespaceSpecifier(
-        t.Identifier(dec.alias)
-      )
-    )
-  }
+  
 
   if (importSpecifierQueue.length > 0) {
     const result = generate(
