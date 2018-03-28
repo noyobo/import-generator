@@ -1,5 +1,7 @@
 ### import-generator [![npm](http://img.shields.io/npm/v/import-generator.svg)](https://npmjs.org/package/import-generator) [![npm](http://img.shields.io/npm/dm/import-generator.svg)](https://npmjs.org/package/import-generator)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/noyobo/import-generator.svg)](https://greenkeeper.io/)
+
 > Module schema conversion to import statements
 
 `npm install import-generator`
